@@ -114,8 +114,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
            color: #000;
        }
        .modal-header, h4, .close {
-           background-color: #333;
-           color: #fff !important;
+           background-color: #e0ccff;
+           color: #e0ccff !important;
            text-align: center;
            font-size: 30px;
        }
@@ -124,12 +124,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
        }
        .nav-tabs li a {
            color: #777;
-       }
-       #googleMap {
-           width: 100%;
-           height: 400px;
-           -webkit-filter: grayscale(100%);
-           filter: grayscale(100%);
        }
        .navbar {
            font-family: Montserrat, sans-serif;

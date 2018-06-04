@@ -8,45 +8,129 @@
     <div class="col-sm-4">
     <hr>
       <h5 class="text-center"><strong><a href="http://cavnesshr.com/" target="_blank">cavnesshr.com</a></strong></h5><br>
-      <a href="#demo" data-toggle="collapse">
+
       <?= $this->Html->image("/img/cavness.PNG", [
                            "alt" => "CavnessHR",
                        ]); ?>
 
-      </a>
-      <div id="demo" class="collapse">
-        <h5><strong>CavnessHR is a company that delivers HR solutions to small business with less than 50 employees.</strong></h5>
-      </div>
+      <div class="col-sm-4 text-center">
+            <br>
+                 <!-- Trigger the modal with a button -->
+                 <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#cavnessModal">View Project Description</button>
+            </div>
     </div>
 
     <div class="col-sm-4">
     <hr>
       <h5 class="text-center"><strong><a href="http://keepnow.org/" target="_blank">keepnow.org</a></strong></h5><br>
-      <a href="#demo2" data-toggle="collapse">
         <?= $this->Html->image("/img/keep.PNG", [
                                   "alt" => "KEEP",
                               ]); ?>
 
-      </a>
-      <div id="demo2" class="collapse">
-           <h5><strong>Kent Education and Equity Partnership is a non-profit  that focuses on boosting reading and math scores for underprivileged minorities in the greater King county area.</strong></h5>
+
+      <div class="col-sm-4 text-center">
+      <br>
+           <!-- Trigger the modal with a button -->
+           <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#keepModal">View Project Description</button>
       </div>
 
     </div>
     <div class="col-sm-4">
     <hr>
       <h5 class="text-center"><strong><a href="http://flywithgreenriver.greenrivertech.net/" target="_blank">flywithgreenriver.greenrivertech.net</a></strong></h5><br>
-      <a href="#demo3" data-toggle="collapse">
+
          <?= $this->Html->image("/img/grc_aviation.PNG", [
                                    "alt" => "Green River Aviation",
                                ]); ?>
-
-      </a>
-      <div id="demo3" class="collapse">
-           <h5><strong>The aviation department at Green River tasked us with developing a web presence for their program so they could
-           show people jobs/internship, scholarships, and feature events that occur with the program.</strong></h5>
+      <div class="col-sm-4 text-center">
+      <br>
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#greenriverModal">View Project Description</button>
       </div>
     </div>
+  </div>
+</div>
+
+
+<!-- Cavness Modal -->
+<div id="cavnessModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+          <h5 class="text-center"><strong><a href="http://cavnesshr.com/" target="_blank">cavnesshr.com</a></strong></h5><br>
+
+                       <?= $this->Html->image("/img/cavness.PNG", [
+                                                 "alt" => "CavnessHR",
+                                             ]); ?>
+
+
+
+
+                         <h5><strong>CavnessHR is a company that delivers HR solutions to small business with less than 50 employees.</strong></h5>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="keepModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h5 class="text-center"><strong><a href="http://keepnow.org/" target="_blank">keepnow.org</a></strong></h5><br>
+                <?= $this->Html->image("/img/keep.PNG", [
+                                          "alt" => "KEEP",
+                                      ]); ?>
+
+
+                  <h5><strong>The Kent Education and Equity Partnership (KEEP) is a non-profit that focuses on boosting the reading and math
+                   scores of underprivileged minorities throughout the greater King county region. </strong></h5>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Greenriver Modal -->
+<div id="greenriverModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+    
+      <div class="modal-body">
+        <h5 class="text-center"><strong><a href="http://flywithgreenriver.greenrivertech.net/" target="_blank">flywithgreenriver.greenrivertech.net</a></strong></h5><br>
+
+                <?= $this->Html->image("/img/grc_aviation.PNG", [
+                                          "alt" => "Green River Aviation",
+                                      ]); ?>
+
+                  <h5><strong>The aviation department at Green River tasked us with developing a web presence for their program so they could
+                  show people jobs/internship, scholarships, and feature events that occur with the program.</strong></h5>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -96,6 +180,12 @@
          <td></td>
          <td>PHPUnit </td>
       </tr>
+       <tr>
+              <td></td>
+               <td></td>
+               <td></td>
+               <td>Eclipse</td>
+            </tr>
     </tbody>
   </table>
 
