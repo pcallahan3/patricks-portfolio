@@ -4,6 +4,7 @@
        <h1>Projects that Patrick Callahan has worked on</h1>
   </div>
 
+
   <div class="row">
     <div class="col-sm-4">
     <hr>
@@ -33,29 +34,32 @@
            <!-- Trigger the modal with a button -->
            <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#keepModal">View Project Description</button>
       </div>
-
     </div>
+
+
     <div class="col-sm-4">
-    <hr>
-      <h5 class="text-center"><strong><a href="http://flywithgreenriver.greenrivertech.net/" target="_blank">flywithgreenriver.greenrivertech.net</a></strong></h5><br>
+        <hr>
+          <h5 class="text-center"><strong><a href="http://flywithgreenriver.greenrivertech.net/" target="_blank">flywithgreenriver.greenrivertech.net</a></strong></h5><br>
+            <?= $this->Html->image("/img/grc_aviation.PNG", [
+                                      "alt" => "Green River Aviation",
+                                  ]); ?>
 
-         <?= $this->Html->image("/img/grc_aviation.PNG", [
-                                   "alt" => "Green River Aviation",
-                               ]); ?>
-      <div class="col-sm-4 text-center">
-      <br>
-          <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#greenriverModal">View Project Description</button>
-      </div>
-    </div>
-  </div>
-</div>
+
+          <div class="col-sm-4 text-center">
+          <br>
+               <!-- Trigger the modal with a button -->
+               <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#greenriverModal">View Project Description</button>
+          </div>
+        </div>
+        </div>
+
+
+
 
 
 <!-- Cavness Modal -->
 <div id="cavnessModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body">
@@ -64,10 +68,6 @@
                        <?= $this->Html->image("/img/cavness.PNG", [
                                                  "alt" => "CavnessHR",
                                              ]); ?>
-
-
-
-
                          <h5><strong>CavnessHR is a company that delivers HR solutions to small business with less than 50 employees.</strong></h5>
 
 
@@ -76,15 +76,13 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
 </div>
 
 
-<!-- Modal -->
+<!-- KEEP Modal -->
 <div id="keepModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body">
@@ -102,44 +100,34 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
-</div>
 
-
-
-<!-- Greenriver Modal -->
+<!-- Green River Modal -->
 <div id="greenriverModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
-    
       <div class="modal-body">
         <h5 class="text-center"><strong><a href="http://flywithgreenriver.greenrivertech.net/" target="_blank">flywithgreenriver.greenrivertech.net</a></strong></h5><br>
-
                 <?= $this->Html->image("/img/grc_aviation.PNG", [
                                           "alt" => "Green River Aviation",
                                       ]); ?>
 
-                  <h5><strong>The aviation department at Green River tasked us with developing a web presence for their program so they could
-                  show people jobs/internship, scholarships, and feature events that occur with the program.</strong></h5>
+
+                  <h5><strong> </strong></h5>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+    </div>
 
-  </div>
-</div>
 
 
 
 <div class="col-sm-12">
-
   <h2 class="text-center">Technologies Experience </h2>
-
   <table class="table table-hover">
     <thead>
       <tr>
