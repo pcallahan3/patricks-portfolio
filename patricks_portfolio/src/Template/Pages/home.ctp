@@ -1,10 +1,27 @@
 
 
-   <div class="col-sm-12">
+
+
+
+
+<div class="container-fluid">
+    
+    
+    
+   
+  <div class="jumbotron ">
+    <h1 class="text-center">Elevator Pitch</h1> 
+   <p>With a passion to continually learn and grow as a developer and investor, having me on your team will add value to solving reoccurring problems that businesses face. Together we collectively exchange ideas, and more importantly, build out those ideas to find solutions that enhance people’s lives over time.  </p>
+  </div>
+  
+
+    <br>
+    <hr>
+    
+    
+<div class="col-sm-12">
        <h1>Projects that Patrick Callahan has worked on</h1>
   </div>
-
-
   <div class="row">
     <div class="col-sm-4">
     <hr>
@@ -14,10 +31,10 @@
                            "alt" => "CavnessHR",
                        ]); ?>
 
-      <div class="col-sm-4 text-center">
+      <div class="col-sm-12 text-center">
             <br>
-                 <!-- Trigger the modal with a button -->
-                 <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#cavnessModal">View Project Description</button>
+<h5><strong>CavnessHR is a company that delivers HR solutions to small business with less than 50 employees.</strong></h5>
+               
             </div>
     </div>
 
@@ -29,10 +46,11 @@
                               ]); ?>
 
 
-      <div class="col-sm-4 text-center">
+      <div class="col-sm-12 text-center">
       <br>
-           <!-- Trigger the modal with a button -->
-           <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#keepModal">View Project Description</button>
+
+          <h5><strong>The Kent Education and Equity Partnership (KEEP) is a non-profit that focuses on boosting the reading and math
+                   scores of underprivileged minorities throughout the greater King county region. </strong></h5>
       </div>
     </div>
 
@@ -45,87 +63,24 @@
                                   ]); ?>
 
 
-          <div class="col-sm-4 text-center">
+          <div class="col-sm-12 text-center">
           <br>
-               <!-- Trigger the modal with a button -->
-               <button type="button" class="btn btn-info btn-sm text-center" data-toggle="modal" data-target="#greenriverModal">View Project Description</button>
+ <h5><strong>The Green River Aviation Department tasked us with building a website so they could have a web presence to attract potential to the
+aviation program that Green River College offers.  </strong></h5>
+               
           </div>
         </div>
         </div>
 
 
-
-
-
-<!-- Cavness Modal -->
-<div id="cavnessModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-body">
-          <h5 class="text-center"><strong><a href="http://cavnesshr.com/" target="_blank">cavnesshr.com</a></strong></h5><br>
-
-                       <?= $this->Html->image("/img/cavness.PNG", [
-                                                 "alt" => "CavnessHR",
-                                             ]); ?>
-                         <h5><strong>CavnessHR is a company that delivers HR solutions to small business with less than 50 employees.</strong></h5>
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
 </div>
 
 
-<!-- KEEP Modal -->
-<div id="keepModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-body">
-        <h5 class="text-center"><strong><a href="http://keepnow.org/" target="_blank">keepnow.org</a></strong></h5><br>
-                <?= $this->Html->image("/img/keep.PNG", [
-                                          "alt" => "KEEP",
-                                      ]); ?>
-
-
-                  <h5><strong>The Kent Education and Equity Partnership (KEEP) is a non-profit that focuses on boosting the reading and math
-                   scores of underprivileged minorities throughout the greater King county region. </strong></h5>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-
-<!-- Green River Modal -->
-<div id="greenriverModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-body">
-        <h5 class="text-center"><strong><a href="http://flywithgreenriver.greenrivertech.net/" target="_blank">flywithgreenriver.greenrivertech.net</a></strong></h5><br>
-                <?= $this->Html->image("/img/grc_aviation.PNG", [
-                                          "alt" => "Green River Aviation",
-                                      ]); ?>
-
-
-                  <h5><strong> </strong></h5>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-    </div>
 
 
 
-
+<br>
+<br>
 <div class="col-sm-12">
   <h2 class="text-center">Technologies Experience </h2>
   <table class="table table-hover">
