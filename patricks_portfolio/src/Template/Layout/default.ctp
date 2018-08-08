@@ -37,8 +37,56 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+<style>
+   .rotator {
+     width: 160px;
+     height: 105px;
+     margin: 20px;
+     background-color:teal;
+   }
+   .transition {
+     -webkit-transition: all 1000s linear;
+     -moz-transition: all 1000s linear;
+     -ms-transition: all 1000s linear;
+     -o-transition: all 1000s linear;
+     transition: all 1000s linear;
+   }
+   .translateAnimationClass {
+     -webkit-transform: rotateX(43200deg) rotateY(14400deg);
+     -moz-transform: rotateX(43200deg) rotateY(14400deg);
+     -ms-transform: rotateX(43200deg) rotateY(14400deg);
+     -o-transform: rotateX(43200deg) rotateY(14400deg);
+     transform: rotateX(43200deg) rotateY(14400deg);
+   }
+   .animation {
+     -webkit-animation: rotator 25s linear infinite;
+     -moz-animation: rotator 25s linear infinite;
+     -ms-animation: rotator 25s linear infinite;
+     -o-animation: rotator 25s linear infinite;
+     animation: rotator 25s linear infinite;
+   }
 
-   <style>
+   @-webkit-keyframes rotator {
+     0%   { -webkit-transform: rotateX(0deg)    rotateY(0deg);    }
+     100% { -webkit-transform: rotateX(1080deg) rotateY(360deg);  }
+   }
+   @-moz-keyframes rotator {
+     0%   { -moz-transform: rotateX(0deg)    rotateY(0deg);    }
+     100% { -moz-transform: rotateX(1080deg) rotateY(360deg);  }
+   }
+   @-ms-keyframes rotator {
+     0%   { -ms-transform: rotateX(0deg)    rotateY(0deg);    }
+     100% { -ms-transform: rotateX(1080deg) rotateY(360deg);  }
+   }
+   @-o-keyframes rotator {
+     0%   { -o-transform: rotateX(0deg)    rotateY(0deg);    }
+     100% { -o-transform: rotateX(1080deg) rotateY(360deg);  }
+   }
+   @keyframes rotator {
+     0%   { transform: rotateX(0deg)    rotateY(0deg);    }
+     100% { transform: rotateX(1080deg) rotateY(360deg);  }
+   }
    body {
        font: 400 15px/1.8 Lato, sans-serif;
        color: #777;
@@ -47,37 +95,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
        padding: 80px 120px;
    }
    .navbar {
-       font-family: ;
+       font-family: Sans-serif;
        margin-bottom: 0;
+       color: black;
        background-color: #3D9970;
        border: 0;
-       font-size: 20px;
+       font-size: 34px;
        letter-spacing: 4px;
        opacity: 0.9;
-   }
-   .navbar li a, .navbar .navbar-brand {
-       color: black !important;
-       text-align: center;
-   }
-   .navbar-nav li a:hover {
-       color: #fff !important;
-   }
-   .navbar-nav li.active a {
-       color: #fff !important;
-       background-color: #29292c !important;
-   }
-   .navbar-default .navbar-toggle {
-       border-color: transparent;
-   }
-   .open .dropdown-toggle {
-       color: #fff;
-       background-color: #555 !important;
-   }
-   .dropdown-menu li a {
-       color: #000 !important;
-   }
-   .dropdown-menu li a:hover {
-       background-color: red !important;
    }
    footer {
        background-color: #2d2d30;
@@ -91,17 +116,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
        color: #777;
        text-decoration: none;
    }
-   .form-control {
-       border-radius: 0;
-   }
-   textarea {
-       resize: none;
-   }
    </style>
  </head>
  
  <!--Navbar-->
 <body>
+<!--JQuery animation-->
+<script>
+    window.onload = function() {
+    document.getElementsByClassName('transition')[0].classList.add('translateAnimationClass');
+    }
+</script>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header ">
